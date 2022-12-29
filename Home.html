@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alumni Form</title>
+    <style>
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap'); 
+
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      .h1,
+      .h2,
+      .h3,
+      .h4,
+      .h5,
+      .h6 {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      input {
+        width: 100%;
+        padding: 10px 10px;
+        margin: 1px 0;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border: 1px;
+        background-color: rgb(230, 247, 255);
+      }
+
+      #fieldname {
+        font-weight: bolder;
+      }
+      body{
+        font-family: poppins;
+      }
+    </style>
+  </head>
+  <body style="margin: 0px; height: 100vh">
+    <!--Main Body-->
+    <div id="Main_Container" style="display: flex">
+      <!--Left Body-->
+
+      <div id="left">
+        <div
+          style="
+            background-color: rgb(0, 0, 0);
+            border-radius: 0px 20px 20px 0px;
+            height: 100%;
+          "
+        >
+          <h1
+            style="
+              color: rgb(255, 255, 255);
+              font-size: 70px;
+              padding-left: 40px;
+              padding-top: 20px;
+              font-family: 'Times New Roman', Times, serif;
+            "
+          >
+            Let's <br />
+            Connect
+          </h1>
+          <img
+            src="1.svg"
+            alt=""
+            style="
+              height: 300px;
+              padding-top: 100px;
+              padding-bottom: 100px;
+              padding-left: 10px;
+              padding-right: 10px;
+            "
+          />
+        </div>
+      </div>
+
+      <!--Right Body-->
+
+      <div id="right" style="height: 100vh">
+        <h1 style="padding-top: 30px; padding-bottom: 50px; margin-left: 350px">
+          Alumni Registration
+        </h1>
+
+        <form action="" style="padding-left: 100px">
+          <!--Personal Information-->
+          <div style="display: flex">
+            <div id="forflex">
+              <div id="Personal_Info">
+                <h2 style="padding-bottom: 30px">Personal Information</h2>
+                <div style="display: flex">
+                  <div>
+                    <label for="#a" id="fieldname">First name:</label><br />
+                    <input type="text" id="#a" name="#a" /><br />
+                  </div>
+                  <div style="margin-left: 50px">
+                    <label for="#a" id="fieldname">Last name:</label><br />
+                    <input type="text" id="#a" name="#a" /><br />
+                  </div>
+                </div>
+
+                <div style="display: flex">
+                  <div>
+                    <label for="#a" id="fieldname" style="margin-top: 20px;">Phone Number:</label
+                    ><br />
+                    <input type="number" id="#a" name="#a" /><br />
+                  </div>
+                  <div style="margin-left: 50px">
+                    <label for="#a" id="fieldname">Email:</label><br />
+                    <input type="email" id="#a" name="#a" /><br />
+                  </div>
+                </div>
+
+                <div style="display: flex">
+                  <div>
+                    <label for="#a" id="fieldname">City:</label><br />
+                    <input type="text" id="#a" name="#a" /><br />
+                  </div>
+                  <div style="margin-left: 50px">
+                    <label for="#a" id="fieldname">Date Of Birth:</label
+                    ><br />
+                    <input type="date" id="#a" name="#a" /><br />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              style="
+                background-color: rgb(236, 236, 236);
+                width: 2px;
+                margin-left: 30px;
+                border-radius: 20px;
+              "
+            ></div>
+            <!--Academic Information-->
+            <div id="forflex">
+              <div id="Academic_Details" style="padding-left: 30px">
+                <h2 style="padding-bottom: 30px">Academic Details</h2>
+
+                <div>
+                  <div>
+                    <label for="#a" id="fieldname">Date of Graduation:</label
+                    ><br />
+                    <input type="date" id="#a" name="#a" /><br />
+                  </div>
+
+                  <div>
+                    <h4 id="fieldname">Course</h4>
+                    <select
+                      name="languages"
+                      id="lang"
+                      style="
+                        border-radius: 20px;
+                        padding: 10px;
+                        margin-top: 8px;
+                        width: 100%;
+                        background-color: rgb(230, 247, 255);
+                        border: 1px;
+                      "
+                    >
+                      <option value="" disabled selected hidden>
+                        Choose Course
+                      </option>
+                      <option value="cse">CSE Core</option>
+                      <option value="aiml">CSE Aiml</option>
+                      <option value="cyber">CSE Cyber</option>
+                      <option value="ds">CSE DS</option>
+                      <option value="ece">ECE</option>
+                    </select>
+                  </div>
+                  <div style="padding-top: 9px">
+                    <label for="#a" id="fieldname" style="padding-top: 100px"
+                      >Overall CGPA:</label
+                    ><br />
+                    <input type="text" id="#a" name="#a" /><br />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Placement Information-->
+
+          <div id="Placement_info">
+            <h2 style="padding-bottom: 30px; padding-top: 30px">
+              Placement Information
+            </h2>
+
+            <div style="display: flex">
+              <div>
+                <label for="#a" id="fieldname">Company:</label><br />
+                <input type="text" id="#a" name="#a" /><br />
+              </div>
+
+              <div style="margin-left: 50px">
+                <label for="#a" id="fieldname">Package:</label><br />
+                <input type="number" id="#a" name="#a" /><br />
+              </div>
+            </div>
+          </div>
+
+          <div style="display: flex;">
+          <button
+            style="
+              padding: 10px 20px;
+              border-radius: 10px;
+              margin-left: 230px;
+              margin-top: 50px;
+              background-color: rgb(230, 247, 255);
+            "
+          >
+           <a href="table.html" style="text-decoration: none;color: black;">Alumni Network</a> 
+          </button>
+          <button
+            style="
+              padding: 10px 20px;
+              border-radius: 10px;
+              margin-top: 50px;
+              margin-left: 30px;
+              background-color: rgb(230, 247, 255);
+            "
+          >
+            Submit
+          </button>
+        </div>
+          
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
